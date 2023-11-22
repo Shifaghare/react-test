@@ -6,7 +6,7 @@ const reducer=(state,action)=>{
         return{count: state.count+1}
 
             case"Decrement":
-            return{count:state.count-1}
+            return{count: state.count-1}
 
                 case"Reset":
                 return{count:0};
@@ -25,7 +25,7 @@ const UseReducer=()=>{
         dispatch({type:"Increment"});
     };
     const decrement=()=>{
-        dispatch({type:"Dncrement"});
+        dispatch({type:"Decrement"});
     };
     const reset=()=>{
         dispatch({type:"Reset"});
